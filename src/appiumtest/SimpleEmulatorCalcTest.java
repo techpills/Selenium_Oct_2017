@@ -60,11 +60,11 @@ public class SimpleEmulatorCalcTest {
   driver.findElement(By.id("com.android.calculator2:id/digit_5")).click();
 
   // Click on = button.
-  driver.findElement(By.name("=")).click();
+ // driver.findElement(By.name("=")).click();
 
   // Get result from result text box of calc app.
-  String result = driver.findElement(By.className("android.widget.EditText")).getText();
-  System.out.println("Number sum result is : " + result);
+  //String result = driver.findElement(By.className("android.widget.EditText")).getText();
+ // System.out.println("Number sum result is : " + result);
   driver.quit();
  }
 }
