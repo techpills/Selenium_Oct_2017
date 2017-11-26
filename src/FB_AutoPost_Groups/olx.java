@@ -65,20 +65,25 @@ private static String url = "https://www.youtube.com/watch?v=2ymkDe8o6Eg";
  
  //WebDriver driver=new ChromeDriver();
 	
-driver.get("https://www.olx.in/item/our-company-want-worker-helper-marketing-ID1fj1NL.html#fed0261de6");
+driver.get("https://www.olx.in/item/red-bear-plush-toy-ID1fJdql.html#4edf59ba09");
 Thread.sleep(8000);
 for(int i=0; i<=100; i++)
 {
 	try {
 		driver.findElement(By.id("ask-text2")).clear();
+		driver.findElement(By.id("ask-text2")).sendKeys("UNBOXING : Mattel Justice League Multiverse Action Figure - Cyborg (6 inch) : Hobbies & Collectibles\n");
+		driver.findElement(By.id("ask-text2")).sendKeys("\n");
+		driver.findElement(By.id("ask-text2")).sendKeys("https://www.youtube.com/watch?v=kIxP2xH4Cec&list=PLLKmTFb-30OnmDsmSf4vjN9SxUkPtjVp_\n");
+		driver.findElement(By.id("ask-text2")).sendKeys("\n");
+		
 		driver.findElement(By.id("ask-text2")).sendKeys("How to download YouTube videos to iPhone & iPad And watch them of offline?\n");
 		driver.findElement(By.id("ask-text2")).sendKeys("\n");
 		driver.findElement(By.id("ask-text2")).sendKeys("https://www.youtube.com/watch?v=593cEPjBIKU&list=PLLKmTFb-30Onzcxa-T-mc_pAyOnxywDAJ\n");
 		driver.findElement(By.id("ask-text2")).sendKeys("\n");
-		WebElement attach = driver.findElement(By.xpath(".//*[@id='upload-a']/span[2]/span"));
-		attach.click();
-		WebElement browse = driver.findElement(By.id("attachment0")); 
-		browse.sendKeys("C:\\Selenium\\Resume.zip");
+		//WebElement attach = driver.findElement(By.xpath(".//*[@id='upload-a']/span[2]/span"));
+		//attach.click();
+		//WebElement browse = driver.findElement(By.id("attachment0")); 
+		//browse.sendKeys("C:\\Selenium\\Resume.zip");
 		System.out.println("No."+i+"Uploaded");
 /*driver.findElement(By.id("ask-text2")).sendKeys("CLICK ON AMAZON FOR 90% OFFER");
 driver.findElement(By.id("ask-text2")).sendKeys("\n");

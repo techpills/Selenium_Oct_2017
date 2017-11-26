@@ -64,7 +64,7 @@ public class fb_group_post {
 	driver = new FirefoxDriver(myprofile);
  
  //WebDriver driver=new ChromeDriver();
-driver.get("https://www.facebook.com/dialog/share?app_id=87741124305&href=https%3A//www.youtube.com/attribution_link%3Fa%3DG6q6AE7ZXpY%26u%3D%252Fwatch%253Fv%253D_VHeOsOUfSo%2526feature%253Dshare%2526list%253DPLLKmTFb-30OmZED4ijXSl_4-7hFwxMKit&display=popup&redirect_uri=https://www.youtube.com/facebook_redirect");
+driver.get("http://qafreaks.blogspot.com/");
  
 //alert.dismiss();
  //WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -87,13 +87,13 @@ driver.get("https://www.facebook.com/dialog/share?app_id=87741124305&href=https%
  XSSFSheet sheet = workbook.getSheetAt(0); 
   
    //for (int i =101; i <= sh	eet.ge	tLastRowNum(); i++)
-	   i : for (int i=36; i <=40; i++)
+	   i : for (int i=105; i <=110; i++)
     	 {
 		   String keyword = sheet.getRow(i).getCell(0).getStringCellValue( );
 		     driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 
 Thread.sleep(25000);
-		   driver.navigate().to("https://www.facebook.com/dialog/share?app_id=87741124305&href=https%3A//www.youtube.com/attribution_link%3Fa%3DVBmdhQdl3o4%26u%3D%252Fwatch%253Fv%253D2ymkDe8o6Eg%2526feature%253Dshare&display=popup&redirect_uri=https://www.youtube.com/facebook_redirect");
+		   driver.navigate().to("https://goo.gl/X4YZpM");
 		   driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 
 		   WebElement selectGroup = (new WebDriverWait(driver, 300))
